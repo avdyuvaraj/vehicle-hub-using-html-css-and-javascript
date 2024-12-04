@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+          }
+          
+          .contact-form label {
+            color: black;
+          }
+          
+          .contact-form .heading {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 12px;
+            font-weight: bold;
+            display: block;
+          }
+          
+          .contact-form form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .contact-form label {
+            margin-bottom: 10px;
+          }
+          
+          textarea {
+            resize: none;
+            max-height: 80px;
+            max-width: 250px;
+          }
+          
+          .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+          }
+          
+          .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px #00bcd4;
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .contact-form button[type="submit"] {
+            background-color: #0097a7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          
+          .contact-form button[type="submit"]:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+          }
+          
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">Vehicles Hub</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="twoWheeler.html">Two Wheeler</a></li>
+        <li><a href="fourWheeler.html">Four Wheeler</a></li>
+        <li><a href="moreThanFour.html">More Than Four</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to Vehicles Hub</h1>
+      <p>Your ultimate guide to all types of vehicles. Discover, compare, and explore your next ride!</p>
+      <a href="index.html#Explore" class="cta">Explore Now</a>
+    </div>
+  </header> 
+<div style="display: flex; justify-content:center; align-items:center">
+    <div class="contact-form">
+        <span class="heading">Contact Us</span>
+        <form action="https://formspree.io/f/xzzboprd" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" required="">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required=""></textarea>
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Vehicles Hub. Designed with passion for vehicles.</p>
+  </footer>
+</body>
+</html>

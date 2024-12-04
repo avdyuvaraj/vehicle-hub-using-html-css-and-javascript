@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #333;
+  color: #fff;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 10px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  background: #555;
+}
+
+.navbar .nav-links .active {
+  background: #007BFF;
+}
+
+/* Section Heading */
+.brands h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 30px 0;
+  color: #007BFF;
+}
+
+/* Grid Layout for Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+/* Model Card Styling */
+.model-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.model-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f4f4f4;
+}
+
+.model-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.model-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Section Spacing */
+.brands {
+  padding: 40px 20px;
+}
+
+.brands h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .model-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .model-card p {
+    font-size: 0.9rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="logo">Vehicles Hub</div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="twoWheeler.html">Two Wheeler</a></li>
+            <li><a href="fourWheeler.html" class="active">Four Wheeler</a></li>
+            <li><a href="moreThanFour.html">More Than Four</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-content">
+          <h1>Welcome to Vehicles Hub</h1>
+          <p>Your ultimate guide to all types of vehicles. Discover, compare, and explore your next ride!</p>
+          <a href="index.html#Explore" class="cta">Explore Now</a>
+        </div>
+      </header> 
+      <section class="brands" id="TATA">
+        <h2>TATA</h2>
+        <div class="grid-container">
+          <div class="model-card">
+            <img src="nexon.jpg" alt="TATA Nexon">
+            <h3>TATA Nexon</h3>
+            <p>Price: ₹8,10,000 - ₹14,50,000</p>
+            <p>Engine: 1.2L Turbo-Petrol / 1.5L Diesel</p>
+            <p>Mileage:17 kmpl (Petrol), 21 kmpl (Diesel)</p>
+            <p>Seating Capacity: 5</p>
+          </div>
+    
+          <div class="model-card">
+            <img src="harrier.jpg" alt="TATA Harrier">
+            <h3>TATA Harrier</h3>
+            <p>Price:₹15,20,000 - ₹24,50,000</p>
+            <p>Engine: 2.0L Diesel</p>
+            <p>Mileage: 16.5 kmpl</p>
+            <p>Seating Capacity: 5</p>
+          </div>
+    
+          <div class="model-card">
+            <img src="safari.jpg" alt="TATA Safari">
+            <h3>TATA Safari</h3>
+            <p>Price:₹16,80,000 - ₹25,50,000</p>
+            <p>Engine: 2.0L Diesel</p>
+            <p>Mileage: 16.1 kmpl</p>
+            <p>Seating Capacity: 6/7</p>
+          </div>
+    
+          <div class="model-card">
+            <img src="punch.webp" alt="TATA Punch">
+            <h3>TATA Punch</h3>
+            <p>Price: ₹6,00,000 - ₹9,50,000</p>
+            <p>Engine: 1.2L Petrol</p>
+            <p>Mileage: 18.9 kmpl</p>
+            <p>Seating Capacity: 5</p>
+          </div>
+    
+          <div class="model-card">
+            <img src="tiago.jpg" alt="TATA Tiago">
+            <h3>TATA Tiago</h3>
+            <p>Price: ₹5,60,000 - ₹8,00,000</p>
+            <p>Engine: 1.2L Petrol / CNG</p>
+            <p>Mileage:19.8 kmpl (Petrol), 26 km/kg (CNG)</p>
+            <p>Seating Capacity: 5</p>
+          </div>
+    
+          <div class="model-card">
+            <img src="altroz.jpg" alt="TATA Altroz">
+            <h3>TATA Altroz</h3>
+            <p>Price: : ₹6,60,000 - ₹10,60,000</p>
+            <p>Engine: 1.2L Petrol / 1.5L Diesel</p>
+            <p>Mileage: 19 kmpl (Petrol), 23 kmpl (Diesel)</p>
+            <p>Seating Capacity: 5</p>
+          </div>
+          <!-- Add more Yamaha models -->
+        </div>
+      </section>
+      
+    
+        <!-- Royal Enfield Section -->
+        <section class="brands" id="Mahindra">
+          <h2>Mahindra</h2>
+          <div class="grid-container">
+            <div class="model-card">
+              <img src="xuv700.jpg" alt="Mahindra XUV700" class="model-image">
+              <h3>Mahindra XUV700</h3>
+              <p>Price:₹14,00,000 - ₹27,00,000</p>
+              <p>Engine: 2.0L Turbo-Petrol / 2.2L Diesel</p>
+              <p>Mileage: 15 kmpl (Petrol), 17 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5/7</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="thar.jpg" alt="Mahindra Thar" class="model-image">
+              <h3>Mahindra Thar</h3>
+              <p>Price: ₹10,50,000 - ₹16,80,000</p>
+              <p>Engine: 2.0L Turbo-Petrol / 2.2L Diesel</p>
+              <p>Mileage: 15 kmpl</p>
+              <p>Seating Capacity: 4</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="scorpio.jpg" alt="Mahindra Scorpio-N" class="model-image">
+              <h3>Mahindra Scorpio-N</h3>
+              <p>Price: ₹13,00,000 - ₹25,00,000</p>
+              <p>Engine: 2.0L Turbo-Petrol / 2.2L Diesel</p>
+              <p>Mileage: 14 kmpl</p>
+              <p>Seating Capacity: 7</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="bolero.jpg" alt="Mahindra Bolero" class="model-image">
+              <h3>Mahindra Bolero</h3>
+              <p>Price:₹9,78,000 - ₹10,79,000</p>
+              <p>Engine: 1.5L Diesel</p>
+              <p>Mileage: 16.7 kmpl</p>
+              <p>Seating Capacity: 7</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="xuv300.jpg" alt="Mahindra XUV3X0" class="model-image">
+              <h3>Mahindra XUV3X0</h3>
+              <p>Price: ₹8,40,000 - ₹14,60,000</p>
+              <p>Engine: 1.2L Petrol / 1.5L Diesel</p>
+              <p>Mileage: 17 kmpl (Petrol), 20 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="marazzo.jpg" alt="Mahindra Marazzo" class="model-image">
+              <h3>Mahindra Marazzo</h3>
+              <p>Price: ₹13,40,000 - ₹15,60,000</p>
+              <p>Engine: 1.5L Diesel</p>
+              <p>Mileage: 17.3 kmpl</p>
+              <p>Seating Capacity: 7/8</p>
+            </div>
+            <!-- Add other Royal Enfield models similarly -->
+          </div>
+        </section>
+    
+        <!-- KIA Section -->
+        <section class="brands" id="KIA">
+          <h2>KIA</h2>
+          <div class="grid-container">
+            <div class="model-card">
+              <img src="seltos.jpg" alt="KIA Seltos" class="model-image">
+              <h3>KIA Seltos</h3>
+              <p>Price: ₹10,90,000 - ₹20,00,000</p>
+              <p>Engine: 1.5L Petrol / 1.5L Diesel / 1.5L Turbo-Petrol</p>
+              <p>Mileage: 20 kmpl (Diesel), 17 kmpl (Petrol)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="sonet.jpg" alt="KIA Sonet" class="model-image">
+              <h3>KIA Sonet</h3>
+              <p>Price: ₹7,80,000 - ₹14,00,000</p>
+              <p>Engine:1.2L Petrol / 1.5L Diesel / 1.0L Turbo-Petrol</p>
+              <p>Mileage:18 kmpl (Petrol), 24 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="carens.jpg" alt="KIA Carens" class="model-image">
+              <h3>KIA Carens</h3>
+              <p>Price:₹10,20,000 - ₹18,50,000</p>
+              <p>Engine: 1.5L Petrol / 1.5L Diesel / 1.4L Turbo-Petrol</p>
+              <p>Mileage: 20 kmpl</p>
+              <p>Seating Capacity: 6/7</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="carnival.jpg" alt="KIA Carnival" class="model-image">
+              <h3>KIA Carnival</h3>
+              <p>Price: ₹30,00,000 - ₹34,00,000</p>
+              <p>Engine: 2.2L Diesel</p>
+              <p>Mileage: 14 kmpl</p>
+              <p>Seating Capacity: 7/8</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="ev6.jpg" alt="KIA EV6" class="model-image">
+              <h3>KIA EV6</h3>
+              <p>Price: ₹60,00,000 - ₹65,00,000</p>
+              <p>Battery: 77.4 kWh</p>
+              <p>Range: 528 km</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="sportage.jpg" alt="KIA Sportage (Expected)" class="model-image">
+              <h3>KIA Sportage (Expected)</h3>
+              <p>Price: ~₹25,00,000 (Expected)</p>
+              <p>Engine:2.0L Diesel</p>
+              <p>Mileage:: ~16 kmpl</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+            <!-- Add other KIA models similarly -->
+          </div>
+        </section>
+    
+        <!-- TVS Section -->
+        <section class="brands" id="Honda">
+          <h2>Honda</h2>
+          <div class="grid-container">
+            <div class="model-card">
+              <img src="hondacity.jpg" alt="Honda City" class="model-image">
+              <h3>Honda City</h3>
+              <p>Price: : ₹11,50,000 - ₹16,00,000</p>
+              <p>Engine: 1.5L Petrol / Diesel</p>
+              <p>Mileage: 18 kmpl (Petrol), 24 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="hondaamaze.jpg" alt="Honda Amaze" class="model-image">
+              <h3>Honda Amaze</h3>
+              <p>Price: ₹7,00,000 - ₹9,60,000</p>
+              <p>Engine: 1.2L Petrol / 1.5L Diesel</p>
+              <p>Mileage: 18.6 kmpl (Petrol), 24 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="hondawrv.jpg" alt="Honda WR-V" class="model-image">
+              <h3>Honda WR-V</h3>
+              <p>Price: ₹9,00,000 - ₹11,00,000</p>
+              <p>Engine: 1.2L Petrol / 1.5L Diesel</p>
+              <p>Mileage: 17 kmpl (Petrol), 23 kmpl (Diesel)</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="hondajazz.webp" alt="Honda Jazz" class="model-image">
+              <h3>Honda Jazz</h3>
+              <p>Price: ₹8,10,000 - ₹10,00,000</p>
+              <p>Engine: 1.2L Petrol</p>
+              <p>Mileage: 16.6 kmpl</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="hondacivic.jpg" alt="Honda Civic (Discontinued in India)" class="model-image">
+              <h3>Honda Civic</h3>
+              <p>Price: ₹18,00,000 (Discontinued)</p>
+              <p>Engine: 1.8L Petrol</p>
+              <p>Mileage: 16.5 kmpl</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+    
+            <div class="model-card">
+              <img src="hondaelevate.jpg" alt="Honda Elevate" class="model-image">
+              <h3>Honda Elevate</h3>
+              <p>Price: ₹11,00,000 - ₹16,00,000</p>
+              <p>Engine: 1.5L Petrol</p>
+              <p>Mileage:16 kmpl</p>
+              <p>Seating Capacity: 5</p>
+            </div>
+            <!-- Add other TVS models similarly -->
+          </div>
+        </section>
+      </main>
+
+    <footer>
+        <p>© 2024 Vehicles Hub. Designed with passion for vehicles.</p>
+    </footer>
+</body>
+</html>

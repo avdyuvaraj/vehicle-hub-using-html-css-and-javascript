@@ -1,0 +1,393 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #333;
+  color: #fff;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links li {
+  margin: 0 10px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  background: #555;
+}
+
+.navbar .nav-links .active {
+  background: #007BFF;
+}
+
+/* Section Heading */
+.brands h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 30px 0;
+  color: #007BFF;
+}
+
+/* Grid Layout for Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+/* Model Card Styling */
+.model-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.model-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f4f4f4;
+}
+
+.model-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.model-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Section Spacing */
+.brands {
+  padding: 40px 20px;
+}
+
+.brands h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .model-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .model-card p {
+    font-size: 0.9rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="logo">Vehicles Hub</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="twoWheeler.html" class="active">Two Wheeler</a></li>
+        <li><a href="fourWheeler.html">Four Wheeler</a></li>
+        <li><a href="moreThanFour.html">More Than Four</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to Vehicles Hub</h1>
+      <p>Your ultimate guide to all types of vehicles. Discover, compare, and explore your next ride!</p>
+      <a href="index.html#Explore" class="cta">Explore Now</a>
+    </div>
+  </header>  
+  <section class="brands" id="yamaha">
+    <h2>Yamaha</h2>
+    <div class="grid-container">
+      <div class="model-card">
+        <img src="r15v4.webp" alt="Yamaha R15">
+        <h3>Yamaha YZF-R15 V4</h3>
+        <p>Price: ₹1,85,000</p>
+        <p>Engine: 155cc, Liquid-cooled</p>
+        <p>Mileage: 40 kmpl</p>
+      </div>
+
+      <div class="model-card">
+        <img src="mt15.webp" alt="Yamaha MT-15 V2">
+        <h3>Yamaha MT-15 V2</h3>
+        <p>Price: ₹1,68,000</p>
+        <p>Engine: 155cc, Liquid-cooled</p>
+        <p>Mileage: 45 kmpl</p>
+      </div>
+
+      <div class="model-card">
+        <img src="fzx.jpg" alt="Yamaha FZ-X">
+        <h3>Yamaha FZ-X</h3>
+        <p>Price: ₹1,38,000</p>
+        <p>Engine: 149cc, Air-cooled</p>
+        <p>Mileage: 50 kmpl</p>
+      </div>
+
+      <div class="model-card">
+        <img src="fzfi.jpg" alt="Yamaha FZ-Fi V3">
+        <h3>Yamaha FZ-Fi V3</h3>
+        <p>Price: ₹1,15,000</p>
+        <p>Engine: 149cc, Air-cooled</p>
+        <p>Mileage: 50 kmpl</p>
+      </div>
+
+      <div class="model-card">
+        <img src="aerox.webp" alt="Yamaha Aerox 155">
+        <h3>Yamaha Aerox 155</h3>
+        <p>Price: ₹1,43,000</p>
+        <p>Engine: 155cc, Liquid-cooled</p>
+        <p>Mileage: 48 kmpl</p>
+      </div>
+
+      <div class="model-card">
+        <img src="r3.webp" alt="Yamaha R3 (Upcoming)">
+        <h3>Yamaha R3</h3>
+        <p>Price: : ~₹3,50,000 (Expected)</p>
+        <p>Engine: 321cc, Liquid-cooled</p>
+        <p>Mileage: 25 kmpl</p>
+      </div>
+      <!-- Add more Yamaha models -->
+    </div>
+  </section>
+  
+
+    <!-- Royal Enfield Section -->
+    <section class="brands" id="royal-enfield">
+      <h2>Royal Enfield</h2>
+      <div class="grid-container">
+        <div class="model-card">
+          <img src="classic.jpg" alt="Royal Enfield Classic 350" class="model-image">
+          <h3>Royal Enfield Classic 350</h3>
+          <p>Price: ₹1,93,000</p>
+          <p>Engine: 349cc, Air-cooled</p>
+          <p>Mileage: 37 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="bullet.jpg" alt="	Royal Enfield Bullet 350" class="model-image">
+          <h3>Royal Enfield Bullet 350</h3>
+          <p>Price: ₹1,75,000</p>
+          <p>Engine: 346cc, Air-cooled</p>
+          <p>Mileage: 37 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="meteor.jpg" alt="Royal Enfield Meteor 350" class="model-image">
+          <h3>Royal Enfield Meteor 350</h3>
+          <p>Price: ₹2,05,000</p>
+          <p>Engine: 349cc, Air-cooled</p>
+          <p>Mileage: 35 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="hunter.jpg" alt="Royal Enfield Hunter 350" class="model-image">
+          <h3>Royal Enfield Hunter 350</h3>
+          <p>Price: ₹1,50,000</p>
+          <p>Engine: 349cc, Air-cooled</p>
+          <p>Mileage: 37 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="interceptor.jpg" alt="Royal Enfield Interceptor 650" class="model-image">
+          <h3>Royal Enfield Interceptor 650</h3>
+          <p>Price: ₹3,00,000</p>
+          <p>Engine: 648cc, Air-cooled</p>
+          <p>Mileage: 25 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="scram.jpg" alt="Royal Enfield Scram 411" class="model-image">
+          <h3>Royal Enfield Scram 411</h3>
+          <p>Price: ₹2,25,000</p>
+          <p>Engine: 411cc, Air-cooled</p>
+          <p>Mileage: 30 kmpl</p>
+        </div>
+        <!-- Add other Royal Enfield models similarly -->
+      </div>
+    </section>
+
+    <!-- KTM Section -->
+    <section class="brands" id="ktm">
+      <h2>KTM</h2>
+      <div class="grid-container">
+        <div class="model-card">
+          <img src="duke200.jpg" alt="KTM Duke 200" class="model-image">
+          <h3>KTM Duke 200</h3>
+          <p>Price: ₹1,96,000</p>
+          <p>Engine: 199cc, Liquid-cooled</p>
+          <p>Mileage: 35 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="duke390.jpg" alt="KTM Duke 390" class="model-image">
+          <h3>KTM Duke 390</h3>
+          <p>Price: ₹3,05,000</p>
+          <p>Engine:373cc, Liquid-cooled</p>
+          <p>Mileage:27 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="rc200.jpg" alt="KTM RC 200" class="model-image">
+          <h3>KTM RC 200</h3>
+          <p>Price:₹2,16,000</p>
+          <p>Engine: 199cc, Liquid-cooled</p>
+          <p>Mileage: 35 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="rc390.jpg" alt="KTM RC 390" class="model-image">
+          <h3>KTM RC 390</h3>
+          <p>Price: ₹3,18,000</p>
+          <p>Engine: 373cc, Liquid-cooled</p>
+          <p>Mileage: 27 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="adventure250.jpg" alt="KTM 250 Adventure" class="model-image">
+          <h3>KTM 250 Adventure</h3>
+          <p>Price: ₹2,44,000</p>
+          <p>Engine: 248cc, Liquid-cooled</p>
+          <p>Mileage: 30 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="adventure390.jpg" alt="KTM 390 Adventure" class="model-image">
+          <h3>KTM 390 Adventure</h3>
+          <p>Price: ₹3,38,000</p>
+          <p>Engine:373cc, Liquid-cooled</p>
+          <p>Mileage:28 kmpl</p>
+        </div>
+        <!-- Add other KTM models similarly -->
+      </div>
+    </section>
+
+    <!-- TVS Section -->
+    <section class="brands" id="tvs">
+      <h2>TVS</h2>
+      <div class="grid-container">
+        <div class="model-card">
+          <img src="1604v.webp" alt="TVS Apache RTR 160 4V" class="model-image">
+          <h3>TVS Apache RTR 160 4V</h3>
+          <p>Price: ₹1,20,000</p>
+          <p>Engine: 159.7cc, Air-cooled</p>
+          <p>Mileage: 50 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="2004v.webp" alt="TVS Apache RTR 200 4V" class="model-image">
+          <h3>TVS Apache RTR 200 4V</h3>
+          <p>Price: ₹1,42,000</p>
+          <p>Engine: 197.75cc, Oil-cooled</p>
+          <p>Mileage: 37 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="raider.webp" alt="TVS Raider 125" class="model-image">
+          <h3>TVS Raider 125</h3>
+          <p>Price: ₹1,00,000</p>
+          <p>Engine: 124.8cc, Air-cooled</p>
+          <p>Mileage: 67 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="ronin.webp" alt="TVS Ronin" class="model-image">
+          <h3>TVS Ronin</h3>
+          <p>Price:₹1,49,000</p>
+          <p>Engine: 225.9cc, Oil-cooled</p>
+          <p>Mileage: 42 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="ntorq.jpg" alt="TVS Ntorq 125" class="model-image">
+          <h3>TVS Ntorq 125</h3>
+          <p>Price: ₹88,000</p>
+          <p>Engine: 124.8cc, Air-cooled</p>
+          <p>Mileage: 50 kmpl</p>
+        </div>
+
+        <div class="model-card">
+          <img src="jupyter125.webp" alt="TVS Jupiter 125" class="model-image">
+          <h3>TVS Jupiter 125</h3>
+          <p>Price: ₹85,000</p>
+          <p>Engine: 124.8cc, Air-cooled</p>
+          <p>Mileage: 50 kmpl</p>
+        </div>
+        <!-- Add other TVS models similarly -->
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Vehicles Hub. Designed with passion for vehicles.</p>
+  </footer>
+</body> 
+</html>
